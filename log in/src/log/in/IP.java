@@ -22,6 +22,26 @@ public class IP {
         this.ipAddress = ipAddress;
         this.accessResult = accessResult;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isAccessResult() {
+        return accessResult;
+    }
+
+    public String getIpAddress() {
+        return ipAddress;
+    }
+
+
     
     
+    
+        @Override
+    public String toString(){
+        return "name: " + name +  " ip address: " + ipAddress + " timeStamp: " + timeStamp + " accessResult: " + accessResult + "\n"; 
+    }
+
 }

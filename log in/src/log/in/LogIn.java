@@ -14,7 +14,13 @@ public class LogIn {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        File_Manager file = new File_Manager();
         
+        IP_Manager i = new IP_Manager();
+        
+        System.out.println(file.readFile() + file.output());
+        System.out.println(" ");
+        System.out.print("1 " + i.FailCounter() + " 2 " + i.suspiciousIP());
     }
     
 }

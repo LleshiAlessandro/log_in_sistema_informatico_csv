@@ -8,17 +8,17 @@ package log.in;
  *
  * @author aless
  */
-public class CounterFail {
-    private String name;
+public class IpFail {
+    private String ip;
     private int counter;
 
-    public CounterFail(String name, int counter) {
-        this.name = name;
+    public IpFail(String ip, int counter) {
+        this.ip = ip;
         this.counter = counter;
     }
 
-    public String getName() {
-        return name;
+    public String getIp() {
+        return ip;
     }
 
     public int getCounter() {
@@ -31,6 +31,6 @@ public class CounterFail {
     
     @Override
     public String toString(){
-        return " name: " + name + " counter fails: " + counter + "\n";
+        return " ip: " + ip + " counter fails: " + counter + "\n";
     }
 }
